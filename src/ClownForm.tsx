@@ -32,16 +32,16 @@ const ClownForm: React.FC<ClownFormProps> = ({ addClown }) => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <div>
-        <label>Name: </label>
+      <div style={{ display: "flex" }}>
+        <label style={{ width: 150 }}>Name: </label>
         <input {...register("name", { required: true })} />
       </div>
-      <div>
-        <label>Type</label>
+      <div style={{ display: "flex" }}>
+        <label style={{ width: 150 }}>Type: </label>
         <input {...register("type", { required: true })} />
       </div>
-      <div>
-        <label>Profile Picture</label>
+      <div style={{ display: "flex" }}>
+        <label style={{ width: 150 }}>Profile Picture: </label>
         <input type="file" {...register("image", { required: true })} />
       </div>
       <button type="submit">Add Clown</button>
