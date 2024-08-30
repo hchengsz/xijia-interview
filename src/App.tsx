@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ClownForm from "./ClownForm";
 import ClownList from "./ClownList";
+import "./styles.css";
 
 interface Clown {
   name: string;
